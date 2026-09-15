@@ -1,10 +1,10 @@
 name: GitHub Actions Demo
-ruin-name: $  {{ github.actor }} is testing out
-Github Actions
+run-name: $  {{ github.actor }} is testing out Github Actions
 on: [push]
 jobs: 
    Explore-GitHub-Actions:
       runs-on: ubuntu-latest
       steps:
-         - name:  eche "The job was automatically triggered by a ${{ github.event_name }} event."
+         - name: Report triggering event
+           run:  eche "The job was automatically triggered by a ${{ github.event_name }} event."
          
